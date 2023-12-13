@@ -8,9 +8,11 @@
   --pill: 2rem;
   --line: 0.1rem;
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 2rem;
   padding: 0;
@@ -18,9 +20,11 @@ body {
   font-size: 2rem;
   background: var(--secondary);
 }
+
 section {
   max-width: 90vw;
 }
+
 a {
   display: inline-block;
   margin: 0.2em;
@@ -32,6 +36,7 @@ a {
   font-weight: normal;
   text-decoration: none;
 }
+
 a:hover {
   color: var(--primary);
   border-color: var(--primary);
@@ -47,9 +52,325 @@ a:nth-of-type(12) {
   border-color: var(--secondary);
 }
 
+.colorchange {
+  animation-name: colorchange;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes colorchange {
+  25% {
+    background: var(--highlight-secondary);
+    color: var(--secondary);
+    border-color: var(--secondary);
+  }
+
+  50% {
+    background: var(--highlight-primary);
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+
+  75% {
+    background: var(--highlight-secondary);
+    color: var(--secondary);
+    border-color: var(--secondary);
+  }
+
+  100% {
+    background: inherit;
+    color: inherit;
+    border-color: inherit;
+  }
+}
+
+.borderchange {
+  animation-name: borderchange;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes borderchange {
+  0% {
+    border-radius: var(--pill);
+  }
+
+  25% {
+    border-radius: var(--radius);
+  }
+
+  50% {
+    border-radius: var(--pill);
+  }
+
+  75% {
+    border-radius: var(--radius);
+  }
+
+  100% {
+    border-radius: var(--pill);
+  }
+}
+
+/* andchange */
+.opacitychange {
+  animation-name: opacitychange;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+/* change opacity */
+
+@keyframes opacitychange {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.rotatechange {
+  animation-name: rotatechange;
+  animation-timing-function: linear;
+  animation-duration: .7s;
+  animation-iteration-count: 1;
+}
+
+/* change rotation */
+
+@keyframes rotatechange {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.scalechange {
+  animation-name: scalechange;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+
+/* change scale */
+
+@keyframes scalechange {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(1.5, 1.5);
+  }
+
+  50% {
+    transform: scale(1, 1);
+  }
+
+  75% {
+    transform: scale(1.5, 1.5);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.skewchange {
+  animation-name: skewchange;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+
+}
+
+/* change skew */
+
+@keyframes skewchange {
+  0% {
+    transform: skew(0deg, 0deg);
+  }
+
+  25% {
+    transform: skew(10deg, 10deg);
+  }
+
+  50% {
+    transform: skew(0deg, 0deg);
+  }
+
+  75% {
+    transform: skew(10deg, 10deg);
+  }
+
+  100% {
+    transform: skew(0deg, 0deg);
+  }
+}
+
+.translatechangehorizontal {
+  animation-name: translatechangehorizontal;
+  animation-timing-function: linear;
+  animation-duration: .4s;
+  animation-iteration-count: 2;
+}
+
+/* change translate */
+
+@keyframes translatechangehorizontal {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(5rem, 0);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  75% {
+    transform: translate(-5rem, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.translatechangevertical {
+  animation-name: translatechangevertical;
+  animation-timing-function: linear;
+  animation-duration: .4s;
+  animation-iteration-count: 2;
+}
+
+/* change translate */
+
+@keyframes translatechangevertical {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(0, 5rem);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  75% {
+    transform: translate(0, -5rem);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.transitionchange {
+  animation-name: transitionchange;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+/* change transition */
+
+/* change the text from horizontal to vertical using opacity animation */
+.shake {
+  animation-name: shake;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  10% {
+    transform: translate(-0.5rem, 0);
+  }
+
+  20% {
+    transform: translate(0.5rem, 0);
+  }
+
+  30% {
+    transform: translate(-0.5rem, 0);
+  }
+
+  40% {
+    transform: translate(0.5rem, 0);
+  }
+
+  50% {
+    transform: translate(-0.5rem, 0);
+  }
+
+  60% {
+    transform: translate(0.5rem, 0);
+  }
+
+  70% {
+    transform: translate(-0.5rem, 0);
+  }
+
+  80% {
+    transform: translate(0.5rem, 0);
+  }
+
+  90% {
+    transform: translate(-0.5rem, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+  
+}
+
+
 .jump {
   animation-name: jump;
-  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-timing-function: ease-in-out;
   animation-duration: 1.2s;
   animation-iteration-count: 1;
 }
@@ -58,21 +379,27 @@ a:nth-of-type(12) {
   0% {
     transform: scale(1, 1) translateY(0);
   }
+
   10% {
     transform: scale(1.1, 0.9) translateY(0);
   }
+
   30% {
     transform: scale(0.9, 1.1) translateY(-5rem) rotate(10deg);
   }
+
   50% {
     transform: scale(1.05, 0.95) translateY(0);
   }
+
   57% {
     transform: scale(1, 1) translateY(-0.5rem) rotate(-2deg);
   }
+
   64% {
     transform: scale(1, 1) translateY(0);
   }
+
   100% {
     transform: scale(1, 1) translateY(0);
   }
