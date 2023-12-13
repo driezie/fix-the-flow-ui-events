@@ -6,7 +6,7 @@
 
 ## Intro
 
-In deze opdracht heb ik diverse UI-elementen gemaakt met verschillende interacties. Ik heb gebruik gemaakt van verschillende soorten knoppen en gebeurtenissen om de gebruikerservaring te verbeteren. Hier zijn de interacties die zijn geïmplementeerd:
+In deze opdracht heb ik diverse UI-elementen gemaakt met verschillende interacties. Ik heb gebruik gemaakt van verschillende soorten knoppen en animations mooier te maken. Hier zijn de interacties die zijn geïmplementeerd:
 
 - `click`
 - `dblclick`
