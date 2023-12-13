@@ -1,16 +1,21 @@
-> _Fork_ deze deeltaak en ga aan de slag. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+<img width="1445" alt="image" src="https://github.com/driezie/fix-the-flow-ui-events/assets/80174866/d22ca363-c897-4e83-96d1-38e91b28ce3f">
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+# Readme fix-the-flow-ui-elements
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+[live link website]([https://github.com/driezie/fix-the-flow-interactive-website/wiki/Development-Lifecycle](https://driezie.github.io/fix-the-flow-ui-events/))
 
-## Experimenten
-<!-- In de Experimenten beschrijf je wat je per experimnet hebt gedaan en documenteer je de code aan de hand van voorbeelden -->
-<!-- Voeg een mooie poster visual toe 📸 per experiment -->
+### Intro
 
-## Licentie
+Ik heb verschillende soorten knoppen gebruikt voor mijn UI elementen. Dit zijn de volgende:
+- `click`
+- `dblclick`
+- `mousedown`
+- `mouseup`
+- `keypress`
+- `blur`
+- `load`
+- `scroll`
+- `touchstart`
+- `touchend`
 
-This project is licensed under the terms of the [MIT license](./LICENSE).
+> "Als gebruiker wil ik verschillende element animations hebben voor elke knop met een functie."
