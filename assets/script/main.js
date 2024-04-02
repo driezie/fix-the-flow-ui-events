@@ -91,6 +91,7 @@ flow.addEventListener('animationend', translatechangevertical)
 
 function translatechangevertical() {
   flow.classList.toggle('translatechangevertical')
+  console.log('translatechangevertical')
 }
 // end button {flow}
 
@@ -112,3 +113,13 @@ function jumpHandler() {
   interaction.classList.toggle('jump')
 }
 
+frontend.classList.toggle('colorchange')
+design.classList.toggle('borderchange')
+and.classList.toggle('opacitychange')
+development.classList.toggle('rotatechange')
+sprint5.classList.toggle('scalechange')
+fix.classList.toggle('skewchange')
+the.classList.toggle('translatechangehorizontal')
+flow.classList.toggle('translatechangevertical')
+user.classList.toggle('shake')
+interaction.classList.toggle('jump')
